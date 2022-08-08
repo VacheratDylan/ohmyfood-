@@ -1,0 +1,219 @@
+body,
+html {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0,0,0,.25) ;
+}
+
+.headerLogo{
+    width: 200px;
+    padding: 20px 0;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f3f3f3;
+    color: rgba(0,0,0,.75);
+    font-size: 25px;
+}
+
+.locationTxt{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.discover{
+    text-align: center;
+    background-color: #fafafa;
+    padding: 50px;
+    height: 300px;
+}
+
+.discoverTitle{
+    font-size: 38px;
+    margin: 0;
+}
+
+.discoverSubtitle{
+    font-size: 28px;
+    margin: 15px 0 60px 0;
+    color: rgba(0,0,0,.65);
+}
+
+.discoverButton{
+    border: 0;
+    padding: 20px 30px;
+    font-size: 25px;
+    border-radius: 100px;
+    color: #fff;
+    background-image: linear-gradient(0deg, #9356DC , #FF79DA);
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: .25rem .25rem 10px rgba(0, 0, 0, .25);
+    text-decoration: none;
+}
+
+.discoverButton:hover{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
+}
+
+.tuto{
+    padding: 40px 25px;
+}
+
+.tutoTitle{
+    font-size: 37px;
+}
+
+.tutoList {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.tutoItem{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 40px 0 10px 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .125);
+}
+
+.tutoItemNumber{
+    display: flex;
+    background-color: #9356DC;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    margin-left: -34px;
+}
+
+.tutoItemIcon{
+    margin: 0 20px;
+    color: rgba(0,0,0,.50);
+    font-size: 25px;
+}
+
+.tutoItemTxt{
+    font-size: 20px;
+}
+
+.restaurant{
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 320px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.cardImg{
+    width: 100%;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.cardNew{
+    background-color: #99e2d0;
+    color: #24816a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    margin: 20px 310px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.cardContentTitle{
+    color: black;
+    font-size: 25px;
+    padding: 10px 0 0 20px ;
+    margin: 0;
+}
+
+.cardContentTxt{
+    color: rgba(0, 0, 0, .75);
+    font-size: 25px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.cardHeart{
+    position: absolute;
+    font-size: 30px;
+    color: rgba(0, 0, 0, .75);
+    margin: 265px 370px;
+}
+.cardHeartReg,.cardHeartFill{
+    position: absolute;
+}
+
+.cardHeartFill{
+    opacity: 0;
+    color:#9356DC;
+}
+
+.cardHeart:hover .cardHeartReg{
+    opacity: 0;
+    transition: 0.7s;
+}
+.cardHeart:hover .cardHeartFill{
+    transition: 0.7s;
+    opacity: 1;
+}
+
+footer{
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent{
+    margin-left: 20px;
+    padding: 0;
+}
+
+.footerLogo{
+    width: 130px;
+    margin: 25px 0;
+}
+
+.footerItem{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.footerIcon{
+    margin-right: 20px;
+}
+
+footer p{
+    font-size: 20px;
+    margin: 5px;
+}
