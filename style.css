@@ -85,7 +85,7 @@ body,
 html {
     margin: 0;
     font-family: Roboto, sans-serif;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 header {
@@ -142,7 +142,7 @@ header {
     text-align: center;
     background-color: #fafafa;
     padding: 50px;
-    height: 300px;
+    height: 400px;
 }
 
 .discoverTitle {
@@ -160,7 +160,7 @@ header {
 .commandButton {
     border: 0;
     padding: 20px 30px;
-    font-size: 25px;
+    font-size: 18px;
     border-radius: 100px;
     color: #fff;
     background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -176,9 +176,13 @@ header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
 }
 
-@media screen and (max-width:450px) {
+@media screen and (min-width:450px) {
+    .discover {
+        height: 300;
+    }
+
     .discoverButton {
-        padding: 20px 20px;
+        font-size: 25px;
     }
 }
 
@@ -267,7 +271,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 380px;
+    min-width: 320px;
     height: 320px;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -496,16 +500,10 @@ footer a {
     animation-fill-mode: both;
     transform: scale(0);
     overflow: hidden;
-    width: 400px;
+    width: 340px;
     height: 90px;
     max-width: 444px;
     max-height: 90px;
-}
-
-@media screen and (min-width:450px) {
-    .menuItem {
-        width: 444px;
-    }
 }
 
 .encloseMenuItemContent {
@@ -521,20 +519,20 @@ footer a {
 }
 
 .menuItemTitle {
-    font-size: 25px;
+    font-size: 22px;
     margin: 10px 0 0 15px;
     white-space: nowrap;
-    width: 384px;
+    width: 290px;
     overflow: hidden;
     text-overflow: ellipsis;
     transition-duration: .7s;
 }
 
 .menuItemSubtitle {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0 10px 15px;
     white-space: nowrap;
-    width: 384px;
+    width: 290px;
     overflow: hidden;
     text-overflow: ellipsis;
     transition-duration: .7s;
@@ -547,7 +545,7 @@ footer a {
 .menuItemCheck {
     background-color: #99e2d0;
     margin: -0 -64px -0 0;
-    width: 4rem;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,12 +558,12 @@ footer a {
 
 .menuItem:hover .menuItemTitle,
 .menuItemSubtitle {
-    width: 320px;
+    width: 240px;
 }
 
 .menuItemEncloseIcon {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 25px;
+    width: 25px;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -581,6 +579,27 @@ footer a {
 
 .menuItemIcon {
     color: #99e2d0
+}
+
+@media screen and (min-width:450px) {
+    .menuItem {
+        width: 444px;
+    }
+
+    .menuItemTitle {
+        font-size: 25px;
+        width: 388px;
+    }
+
+    .menuItemSubtitle {
+        width: 388px;
+    }
+
+    .menuItem:hover .menuItemTitle,
+    .menuItemSubtitle {
+        width: 320px;
+    }
+
 }
 
 @media screen and (min-width:1412px) {
