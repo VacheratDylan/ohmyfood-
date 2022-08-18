@@ -39,14 +39,14 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     animation: loader .01s;
     animation-delay: 1.75s;
     animation-fill-mode: both;
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .encloseLoaderItem {
@@ -66,16 +66,16 @@
     animation-iteration-count: 1
 }
 
-.loaderItem1{
+.loaderItem1 {
     background-color: #9356dc;
 }
 
-.loaderItem2{
+.loaderItem2 {
     background-color: #FF79DA;
     animation-delay: .25s
 }
 
-.loaderItem3{
+.loaderItem3 {
     background-color: #99E2D0;
     animation-delay: .5s
 }
@@ -88,18 +88,18 @@ html {
     scroll-behavior: smooth
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 5px rgba(0,0,0,.25) ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
 }
 
-.headerLogo{
+.headerLogo {
     width: 200px;
     padding: 20px 0;
 }
 
-.headerMenus{
+.headerMenus {
     position: relative
 }
 
@@ -124,71 +124,79 @@ header{
     object-fit: cover
 }
 
-.location{
+.location {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#f3f3f3;
-    color: rgba(0,0,0,.75);
+    background-color: #f3f3f3;
+    color: rgba(0, 0, 0, .75);
     font-size: 25px;
 }
 
-.locationTxt{
+.locationTxt {
     margin-left: 20px;
     font-weight: bold;
 }
 
-.discover{
+.discover {
     text-align: center;
     background-color: #fafafa;
     padding: 50px;
     height: 300px;
 }
 
-.discoverTitle{
+.discoverTitle {
     font-size: 38px;
     margin: 0;
 }
 
-.discoverSubtitle{
+.discoverSubtitle {
     font-size: 28px;
     margin: 15px 0 60px 0;
-    color: rgba(0,0,0,.65);
+    color: rgba(0, 0, 0, .65);
 }
 
-.discoverButton,.commandButton{
+.discoverButton,
+.commandButton {
     border: 0;
     padding: 20px 30px;
     font-size: 25px;
     border-radius: 100px;
     color: #fff;
-    background-image: linear-gradient(0deg, #9356DC , #FF79DA);
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
     cursor: pointer;
     transition-duration: .25s;
     box-shadow: .25rem .25rem 10px rgba(0, 0, 0, .25);
     text-decoration: none;
 }
 
-.discoverButton,.commandButton:hover{
+.discoverButton:hover,
+.commandButton:hover {
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
 }
 
-.tuto{
+@media screen and (max-width:450px) {
+    .discoverButton {
+        padding: 20px 20px;
+    }
+}
+
+.tuto {
     padding: 40px 25px;
 }
 
-.tutoTitle{
+.tutoTitle {
     font-size: 37px;
 }
 
 .tutoList {
     margin: 0;
     padding: 0;
-    list-style:none;
+    list-style: none;
 }
 
-.tutoItem{
+.tutoItem {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -197,7 +205,7 @@ header{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .125);
 }
 
-.tutoItemNumber{
+.tutoItemNumber {
     display: flex;
     background-color: #9356DC;
     height: 30px;
@@ -210,42 +218,44 @@ header{
     margin-left: -34px;
 }
 
-.tutoItemIcon{
+.tutoItemIcon {
     margin: 0 20px;
-    color: rgba(0,0,0,.50);
+    color: rgba(0, 0, 0, .50);
     font-size: 25px;
 }
 
-.tutoItemTxt{
+.tutoItemTxt {
     font-size: 20px;
 }
 
 @media screen and (min-width:1000px) {
-    .tuto{
+    .tuto {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .tutoList{
+
+    .tutoList {
         display: flex;
     }
-    .tutoItem{
+
+    .tutoItem {
         width: auto;
         margin-right: 30px;
     }
 }
 
-.restaurant{
+.restaurant {
     background-color: #fafafa;
 }
 
-.restaurantTitle{
+.restaurantTitle {
     font-size: 33px;
     padding: 60px 0 0 20px;
     padding-top: 60px;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,11 +263,11 @@ header{
     max-width: 1000px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 420px;
+    min-width: 380px;
     height: 320px;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -265,31 +275,36 @@ header{
     text-decoration: none;
 }
 
-.encloseRestaurantImg{
+
+.encloseRestaurantImg {
     width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
-.restaurant1{
+
+.restaurant1 {
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     display: flex;
     justify-content: flex-end;
 }
-.restaurant2{
+
+.restaurant2 {
     background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     display: flex;
     justify-content: flex-end;
 }
-.restaurant3{
+
+.restaurant3 {
     background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-.restaurant4{
+
+.restaurant4 {
     background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.cardNew{
+.cardNew {
     background-color: #99e2d0;
     color: #24816a;
     padding: 10px 20px;
@@ -299,118 +314,128 @@ header{
     height: 22px;
     margin: 20px;
 }
-.encloseCardContent{
+
+.encloseCardContent {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-.cardContentTitle{
+
+.cardContentTitle {
     color: black;
     font-size: 25px;
-    padding: 10px 0 0 20px ;
+    padding: 10px 0 0 20px;
     margin: 0;
 }
 
-.cardContentTxt{
+.cardContentTxt {
     color: rgba(0, 0, 0, .75);
     font-size: 25px;
     margin: 0;
     padding: 0 20px;
 }
 
-.cardHeart{
-    display:flex;
+.cardHeart {
+    display: flex;
     font-size: 30px;
     color: rgba(0, 0, 0, .75);
 }
 
-.cardHeartReg{
+.cardHeartReg {
     padding-right: 20px;
 }
 
-.cardHeartFill{
+.cardHeartFill {
     opacity: 0;
-    position:absolute;
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC ), to(#FF79DA ));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.cardHeart:hover .cardHeartReg{
+.cardHeart:hover .cardHeartReg {
     opacity: 0;
-    transition: 0.7s ;
-    
+    transition: 0.7s;
+
 }
-.cardHeart:hover .cardHeartFill{
-    transition: 0.7s ;
+
+.cardHeart:hover .cardHeartFill {
+    transition: 0.7s;
     opacity: 1;
 }
 
 @media screen and (min-width : 1000px) {
 
-    .restaurant{
+    .restaurant {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .cards{
+
+    .cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
-    .card{
+    .card {
         width: 420px;
     }
 
 }
 
-footer{
+footer {
     background-color: #353535;
     color: white;
     display: flex;
     flex-direction: column;
 }
 
-.footerContent{
+.footerContent {
     margin-left: 20px;
     padding: 0;
 }
 
-.footerLogo{
+.footerLogo {
     width: 130px;
     margin: 25px 0;
     filter: invert(100%);
 }
 
-.footerItem{
+.footerItem {
     display: flex;
     align-items: center;
     height: 30px;
 }
 
-.footerIcon1{
+.footerIcon1 {
     margin-right: 20px;
     margin-left: 5px;
 }
 
-.footerIcon2{
+.footerIcon2 {
     margin-right: 14px;
     margin-left: 5px;
 }
 
-footer p{
+.footerTxt {
     font-size: 20px;
     margin: 5px;
 }
 
-footer p:hover{
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerTxt:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.mainMenu{
+
+.mainMenu {
     background-color: #f6f6f6;
     margin-top: -50px;
     border-radius: 50px 50px 0 0;
@@ -418,25 +443,26 @@ footer p:hover{
     position: relative;
 }
 
-.menuHeader{
+.menuHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px 0 15px;
 }
 
-.menuHeaderTitle{
+.menuHeaderTitle {
     font-size: 35px;
     font-style: oblique;
 }
-.encloseMenuItem{
+
+.encloseMenuItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.encloseMenu{
+.encloseMenu {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -444,15 +470,15 @@ footer p:hover{
 
 }
 
-.encloseMenuTitle{
+.encloseMenuTitle {
     display: flex;
     flex-direction: column;
 }
 
-.menuTitle{
+.menuTitle {
     text-transform: uppercase;
     font-weight: 300;
-    
+
 }
 
 .menuTitleUnderline {
@@ -462,7 +488,7 @@ footer p:hover{
     margin-top: -10px;
 }
 
-.menuItem{
+.menuItem {
     display: flex;
     background-color: white;
     border-radius: 25px;
@@ -470,61 +496,70 @@ footer p:hover{
     animation-fill-mode: both;
     transform: scale(0);
     overflow: hidden;
-    width: 444px;
+    width: 400px;
     height: 90px;
     max-width: 444px;
     max-height: 90px;
 }
-.encloseMenuItemContent{
+
+@media screen and (min-width:450px) {
+    .menuItem {
+        width: 444px;
+    }
+}
+
+.encloseMenuItemContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.menuItemContent{
+.menuItemContent {
     display: flex;
     flex-direction: column;
 }
 
 .menuItemTitle {
     font-size: 25px;
-    margin: 10px 0 0 15px ;
-    white-space: nowrap; 
-    width: 384px; 
+    margin: 10px 0 0 15px;
+    white-space: nowrap;
+    width: 384px;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition-duration: .7s;   
+    transition-duration: .7s;
 }
 
-.menuItemSubtitle{
+.menuItemSubtitle {
     font-size: 18px;
-    margin: 10px 0 10px 15px ;
-    white-space: nowrap; 
-    width: 384px; 
+    margin: 10px 0 10px 15px;
+    white-space: nowrap;
+    width: 384px;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition-duration: .7s;   
+    transition-duration: .7s;
 }
 
-.menuItemPrice{
+.menuItemPrice {
     padding: 15px 20px 0 0;
 }
 
-.menuItemCheck{
+.menuItemCheck {
     background-color: #99e2d0;
     margin: -0 -64px -0 0;
     width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: .7s;   
+    transition-duration: .7s;
 }
 
 .menuItem:hover .menuItemCheck {
     margin-right: 0px
 }
-.menuItem:hover .menuItemTitle,.menuItemSubtitle {
+
+.menuItem:hover .menuItemTitle,
+.menuItemSubtitle {
     width: 320px;
 }
 
@@ -549,7 +584,7 @@ footer p:hover{
 }
 
 @media screen and (min-width:1412px) {
-    .encloseMenuItem{
+    .encloseMenuItem {
         flex-direction: row;
         justify-content: space-evenly;
     }
@@ -562,12 +597,14 @@ footer p:hover{
     padding: 3rem 0
 }
 
-.delay-0{
+.delay-0 {
     animation-delay: .2s;
 }
-.delay-1{
+
+.delay-1 {
     animation-delay: .4s;
 }
-.delay-2{
+
+.delay-2 {
     animation-delay: .6s;
 }

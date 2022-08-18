@@ -1,136 +1,139 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Accueil</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/7bfa5bb677.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        
-        <div class="loader">
-            <div class="encloseLoaderItem">
-                <div class="loaderItem loaderItem1"></div>
-                <div class="loaderItem loaderItem2"></div>
-                <div class="loaderItem loaderItem3"></div>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Accueil</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7bfa5bb677.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="encloseLoaderItem">
+            <div class="loaderItem loaderItem1"></div>
+            <div class="loaderItem loaderItem2"></div>
+            <div class="loaderItem loaderItem3"></div>
         </div>
+    </div>
 
-        <header>
-            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="headerLogo">   
-        </header>
+    <header>
+        <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="headerLogo">
+    </header>
 
-        <main>
-            <section class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="locationTxt">Paris, Belleville</p>
-            </section>
-            <section class="discover">
-                <h2 class="discoverTitle">Réservez le menu qui <br> vous convient</h2>
-                <p class="discoverSubtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a href="#" class="discoverButton">Explorer nos restaurants</a>
-            </section>
-            <section class="tuto">
-                <h2 class="tutoTitle">Fonctionnement</h2>
-                <ol class="tutoList">
-                    <li class="tutoItem">
-                        <div class="tutoItemNumber">1</div>
-                        <i class="fa-solid fa-mobile-screen-button tutoItemIcon"></i>
-                        <p class="tutoItemTxt">Choisissez un restaurant</p>
-                    </li>
-                    <li class="tutoItem">
-                        <div class="tutoItemNumber">2</div>
-                        <i class="fa-solid fa-list-ul tutoItemIcon"></i>
-                        <p class="tutoItemTxt">Composez votre menu</p>
-                    </li>
-                    <li class="tutoItem">
-                        <div class="tutoItemNumber">3</div>
-                        <i class="fa-solid fa-store tutoItemIcon"></i>
-                        <p class="tutoItemTxt">Dégustez au restaurant</p>
-                    </li>
-                </ol>
-            </section>
-            <section class="restaurant">
-                <h2 class="restaurantTitle">Restaurants</h2>
-                <div class="cards">
-                    <a href="la-palette-du-gout.html" class="card">
-                        <div class="encloseRestaurantImg restaurant1">
-                            <span class="cardNew">Nouveau</span>
+    <main>
+        <section class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="locationTxt">Paris, Belleville</p>
+        </section>
+        <section class="discover">
+            <h2 class="discoverTitle">Réservez le menu qui <br> vous convient</h2>
+            <p class="discoverSubtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a href="#restaurant" class="discoverButton">Explorer nos restaurants</a>
+        </section>
+        <section class="tuto">
+            <h2 class="tutoTitle">Fonctionnement</h2>
+            <ol class="tutoList">
+                <li class="tutoItem">
+                    <div class="tutoItemNumber">1</div>
+                    <i class="fa-solid fa-mobile-screen-button tutoItemIcon"></i>
+                    <p class="tutoItemTxt">Choisissez un restaurant</p>
+                </li>
+                <li class="tutoItem">
+                    <div class="tutoItemNumber">2</div>
+                    <i class="fa-solid fa-list-ul tutoItemIcon"></i>
+                    <p class="tutoItemTxt">Composez votre menu</p>
+                </li>
+                <li class="tutoItem">
+                    <div class="tutoItemNumber">3</div>
+                    <i class="fa-solid fa-store tutoItemIcon"></i>
+                    <p class="tutoItemTxt">Dégustez au restaurant</p>
+                </li>
+            </ol>
+        </section>
+        <section class="restaurant" id="restaurant">
+            <h2 class="restaurantTitle">Restaurants</h2>
+            <div class="cards">
+                <a href="la-palette-du-gout.html" class="card">
+                    <div class="encloseRestaurantImg restaurant1">
+                        <span class="cardNew">Nouveau</span>
+                    </div>
+                    <div class="encloseCardContent">
+                        <div class="cardContent">
+                            <h3 class="cardContentTitle">La palette du goût</h3>
+                            <p class="cardContentTxt">Ménilmontant</p>
                         </div>
-                        <div class="encloseCardContent">
-                            <div class="cardContent">
-                                <h3 class="cardContentTitle">La palette du goût</h3>
-                                <p class="cardContentTxt">Ménilmontant</p>
-                            </div>
-                            <div class="cardHeart">
-                                <i class="fa-regular fa-heart cardHeartReg"></i>
-                                <i class="fa-solid fa-heart cardHeartFill"></i>
-                            </div>
+                        <div class="cardHeart">
+                            <i class="fa-regular fa-heart cardHeartReg"></i>
+                            <i class="fa-solid fa-heart cardHeartFill"></i>
                         </div>
-                    </a>
-                    <a href="la-note-enchantee.html" class="card">
-                        <div class="encloseRestaurantImg restaurant2">
-                            <span class="cardNew">Nouveau</span>
+                    </div>
+                </a>
+                <a href="la-note-enchantee.html" class="card">
+                    <div class="encloseRestaurantImg restaurant2">
+                        <span class="cardNew">Nouveau</span>
+                    </div>
+                    <div class="encloseCardContent">
+                        <div class="cardContent">
+                            <h3 class="cardContentTitle">La note enchantée</h3>
+                            <p class="cardContentTxt">Charonne</p>
                         </div>
-                        <div class="encloseCardContent">
-                            <div class="cardContent">
-                                <h3 class="cardContentTitle">La note enchantée</h3>
-                                <p class="cardContentTxt">Charonne</p>
-                            </div>
-                            <div class="cardHeart">
-                                <i class="fa-regular fa-heart cardHeartReg"></i>
-                                <i class="fa-solid fa-heart cardHeartFill"></i>
-                            </div>
+                        <div class="cardHeart">
+                            <i class="fa-regular fa-heart cardHeartReg"></i>
+                            <i class="fa-solid fa-heart cardHeartFill"></i>
                         </div>
-                    </a>
-                    <a href="a-la-francaise.html" class="card">
-                        <div class="encloseRestaurantImg restaurant3"></div>
-                        <div class="encloseCardContent">
-                            <div class="cardContent">
-                                <h3 class="cardContentTitle">À la française</h3>
-                                <p class="cardContentTxt">Cité Rouge</p>
-                            </div>
-                            <div class="cardHeart">
-                                <i class="fa-regular fa-heart cardHeartReg"></i>
-                                <i class="fa-solid fa-heart cardHeartFill"></i>
-                            </div>
+                    </div>
+                </a>
+                <a href="a-la-francaise.html" class="card">
+                    <div class="encloseRestaurantImg restaurant3"></div>
+                    <div class="encloseCardContent">
+                        <div class="cardContent">
+                            <h3 class="cardContentTitle">À la française</h3>
+                            <p class="cardContentTxt">Cité Rouge</p>
                         </div>
-                    </a>
-                    <a href="le-delice-des-sens.html" class="card">
-                        <div class="encloseRestaurantImg restaurant4"></div> 
-                        <div class="encloseCardContent">
-                            <div class="cardContent">
-                                <h3 class="cardContentTitle">Le délice des sens</h3>
-                                <p class="cardContentTxt">Folie-Méricourt</p>
-                            </div>
-                            <div class="cardHeart">
-                                <i class="fa-regular fa-heart cardHeartReg"></i>
-                                <i class="fa-solid fa-heart cardHeartFill"></i>
-                            </div>
+                        <div class="cardHeart">
+                            <i class="fa-regular fa-heart cardHeartReg"></i>
+                            <i class="fa-solid fa-heart cardHeartFill"></i>
                         </div>
-                    </a>
-                </div>
-                
-            </section>
-        </main>
-        <footer>
-            <div class="footerContent">
-                <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="footerLogo">
-                <div class="footerItem">
-                    <i class="fa-solid fa-utensils footerIcon1"></i>
-                    <p>Proposer un restaurant</p>
-                </div>
-                <div class="footerItem">
-                    <i class="fa-solid fa-handshake-angle footerIcon2"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-                <p>Mentions légales</p>
-                <p>Contact</p>
+                    </div>
+                </a>
+                <a href="le-delice-des-sens.html" class="card">
+                    <div class="encloseRestaurantImg restaurant4"></div>
+                    <div class="encloseCardContent">
+                        <div class="cardContent">
+                            <h3 class="cardContentTitle">Le délice des sens</h3>
+                            <p class="cardContentTxt">Folie-Méricourt</p>
+                        </div>
+                        <div class="cardHeart">
+                            <i class="fa-regular fa-heart cardHeartReg"></i>
+                            <i class="fa-solid fa-heart cardHeartFill"></i>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </footer>
-    </body>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="footerLogo">
+            <div class="footerItem">
+                <i class="fa-solid fa-utensils footerIcon1"></i>
+                <p class="footerTxt">Proposer un restaurant</p>
+            </div>
+            <div class="footerItem">
+                <i class="fa-solid fa-handshake-angle footerIcon2"></i>
+                <p class="footerTxt">Devenir partenaire</p>
+            </div>
+            <p class="footerTxt">Mentions légales</p>
+            <a href="mailto:Ohmyfood@contact.com" class="footerTxt">Contact</a>
+        </div>
+    </footer>
+</body>
+
 </html>
