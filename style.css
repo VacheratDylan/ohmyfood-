@@ -135,7 +135,18 @@ header {
 
 .locationTxt {
     margin-left: 20px;
+    font-size: 25px;
     font-weight: bold;
+    color: rgba(0, 0, 0, .75);
+    width: 250px;
+    height: 70px;
+    border: none;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.locationTxt::placeholder {
+    color: rgba(0, 0, 0, .75);
 }
 
 .discover {
@@ -172,13 +183,13 @@ header {
 
 .discoverButton:hover,
 .commandButton:hover {
-    background-color: #fff;
+    background-image: linear-gradient(0deg, #9256dca1, #ff79d9a1);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
 }
 
 @media screen and (min-width:450px) {
     .discover {
-        height: 300;
+        height: 300px;
     }
 
     .discoverButton {
@@ -207,6 +218,7 @@ header {
     border-radius: 30px;
     margin: 40px 0 10px 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .125);
+    transition: 0.5s;
 }
 
 .tutoItemNumber {
@@ -230,6 +242,10 @@ header {
 
 .tutoItemTxt {
     font-size: 20px;
+}
+
+.tutoItem:hover {
+    background-color: #ac7de62f;
 }
 
 @media screen and (min-width:1000px) {
